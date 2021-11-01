@@ -1,2 +1,3 @@
-# discor.github.io
+# discor
+
 Sitio web
