@@ -1,0 +1,846 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Montserrat", 'Mukta', sans-serif;
+
+}
+
+main {
+    padding-top: 75px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 30%;
+}
+
+.disppear {
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Generalidades */
+header {
+    max-width: 100%;
+    height: 10.5vh;
+
+}
+
+main h2 {
+    margin: 20px 0 10px 0;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 40px;
+
+    /*Centrado*/
+    display: flex;
+    justify-content: center;
+
+    transition: all 1s ease-out;
+}
+
+h1:hover {
+    color: #BADA55;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h2 {
+    font-size: 30px;
+    /* Cnetrado */
+    display: flex;
+    justify-content: center;
+    transition: all 1s ease-in-out;
+}
+
+h2:hover {
+    color: #646363;
+}
+
+p {
+    font-weight: 400;
+}
+
+.btnDefault {
+    height: 5vh;
+
+    padding: 10px;
+    border: 2px solid #646363;
+    text-decoration: none;
+    color: #646363;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnDefault:hover {
+    background-color: #646363;
+    color: #BADA55;
+    border: 2px solid white;
+}
+
+
+
+/* Encabezado */
+header a img {
+    width: 200px;
+    padding: 14px;
+    background-color: #BADA55;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+    background-color: #5F634F;
+    width: 100%;
+    box-shadow: 10px 5px 5px black;
+    position: fixed;
+}
+
+.social ul li a img {
+    width: 30px;
+    background-color: #5F634F;
+}
+
+
+
+
+/* Menú */
+.menuIcon {
+    display: none;
+
+}
+
+nav a {
+    text-decoration: none !important;
+    color: inherit;
+    font-size: 19px;
+}
+
+nav li {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 5px 5px;
+
+    text-align: center;
+    color: #fff;
+
+    position: relative;
+}
+
+nav li:hover {
+
+    color: #BADA55;
+}
+
+
+header article .social ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.social ul li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+.social ul li a {
+    color: #fff;
+}
+
+/* Responsive */
+@media (min-width:100px) and (max-width:1200px) {
+    header {
+        display: inline;
+        margin-top: 0px;
+        
+    }
+
+    .topNav.responsive {
+        display: none;
+        
+
+    }
+
+    .topNav ul {
+        background-color: #BADA55;
+        border: 6px #5F634F solid;
+        width: 100%;
+        transition: 0.3 ease;
+        
+    }
+
+    .topNav ul li {
+        display: block;
+        margin-bottom: 10px;
+        
+        
+    }
+    .topNav ul li a{
+        margin-bottom: 10px;
+       
+    }
+
+    @keyframes menuAnimacion {
+        0% {}
+
+        100% {}
+    }
+
+   
+
+    .menuIcon {
+        display: inline;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 15px;
+    } 
+
+    .topNav.responsive {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+   
+
+    nav a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 19px;
+    }
+
+    
+
+    nav li:hover {
+
+        color: #BADA55;
+    }
+
+    
+
+
+}
+
+
+
+
+/* Seccion intro*/
+
+
+
+
+
+
+
+.parrafoIntro {
+    width: 100%;
+    grid-area: parrafo;
+    font-size: 20px;
+}
+
+.btnIntro {
+    padding: 10px;
+    width: 10% !important;
+
+    margin-top: 20px;
+    border: 2px solid #646363;
+    text-decoration: none;
+    text-align: center;
+    color: #646363;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.btnIntro:hover {
+    background-color: #646363;
+    color: #BADA55;
+    border: 2px solid white;
+}
+
+/* Sección Contacto Index */
+
+.sectionContact {
+    margin-top: 10px;
+    height: fit-content;
+    background-color: #BADA55;
+
+    border: 5px solid #646363;
+}
+
+.sectionContact .row .col img {
+    margin-top: 15px;
+    width: 40px;
+}
+
+
+
+
+
+
+
+/* Sección Novedades */
+.sectionNovedades {
+    width: 100%;
+    background-color: #C1CFDA;
+
+}
+
+.h2Novedades {
+    margin-top: 0px;
+}
+
+.sectionNovedades h2 {
+    text-align: center;
+}
+
+.articleNovedades video {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.articleNovedades p {
+    width: 50%;
+    font-size: 20%;
+}
+
+.articleNovedades {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.articleNovedades h4 {
+    animation-name: derechaIzquierda;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.articleNovedades video {
+    animation-name: izquierdaDerecha;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.h2Novedades {
+    animation-name: izquierdaDerecha;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+@keyframes derechaIzquierda {
+    0% {
+        transform: translateX(-400px);
+
+    }
+
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes izquierdaDerecha {
+    0% {
+        transform: translateX(800px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
+/* Contacto */
+.formContacto {
+    height: 50vh;
+
+}
+
+.formContacto form {
+    margin-left: 15px;
+
+}
+
+.formContacto form .gridContacto input,
+.formContacto form textarea {
+    padding: 10px;
+    border-radius: 15px;
+    margin: 1px;
+}
+
+.formContacto form .gridContacto input {
+    border: 1px solid black
+}
+
+.gridContacto {
+
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /*usar fr (fraction) + responsive*/
+    grid-template-rows: 50px 50px;
+
+
+}
+
+.centrarForm {
+    background-color: #BADA55;
+    padding: 10px;
+}
+
+.formMensaje {
+    display: block;
+    width: 48.5%;
+}
+
+.btnDefaultContacto {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #646363;
+    text-decoration: none;
+    color: #646363;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnDefaultContacto:hover {
+    background-color: #646363;
+    color: #BADA55;
+    border: 2px solid white;
+}
+
+.mapaContacto {
+    border: 1px solid black;
+    width: 50%;
+    height: 40vh;
+}
+
+.formContacto {
+    grid-area: formulario;
+}
+
+.mapaContacto {
+    grid-area: mapa;
+}
+
+/* Estilos Form Importados *
+/*Estilos para Form*/
+form p label {
+    color: white;
+}
+
+
+
+.contactForm {
+    background: #BADA55;
+    width: 1fr;
+    margin: 10px 0 0 10px;
+
+
+
+
+}
+
+.contactForm form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.contactForm form label {
+    display: block;
+}
+
+.contactForm form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contactForm form .block {
+    grid-column: 1 / 3;
+}
+
+.contactForm form button,
+.contactForm form input,
+.contactForm form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #4CCF2B;
+}
+
+.contactForm form button {
+    background: #5F634F;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+
+.contactForm form button:hover,
+.contactForm form button:focus {
+    background: #BADA55;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+/* CONTACT INFO */
+.contactInfo {
+    background: #5F634F;
+    margin: 10px 10px 0 0;
+    width: 100%;
+
+
+}
+
+@media (min-width:280px) and (max-width:480px) {
+    .contactInfo {
+        margin: 0 0 0 0;
+    }
+
+    .contactForm {
+        margin: 0 0 0 0;
+    }
+}
+
+.contactInfo h4,
+.contactInfo ul,
+.contactInfo p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contactInfo iframe {
+    height: 50vh;
+
+}
+
+.contactInfo h4,
+.contactInfo ul,
+.contactInfo p {
+    text-align: left;
+    font-size: 15px;
+    margin: 1px 0px 0px 1px;
+    color: white;
+
+
+}
+
+.contactInfo a {
+    color: #BADA55;
+    font-weight: 800;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 0em;
+
+    }
+
+    
+
+    @media (min-width:100px) and (max-width:400px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+
+        .contactForm {
+            width: 100%;
+        }
+
+    }
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}
+
+/* Rubros CSS */
+
+.sectionRubros section ul {
+    padding: 40px;
+}
+
+
+
+.rubrosMain {
+    background-color: #BADA55;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.sectionRubros section div a {
+    animation-name: derechaIzquierda;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.sectionRubros ul {
+    animation-name: derechaIzquierda;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+.sectionRubros img {
+    animation-name: izquierdaDerecha;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.4s;
+}
+
+
+
+/*Nuestra Empresa CSS*/
+
+
+.h1Empresa {
+    width: auto;
+    color: black;
+
+
+}
+
+.empresaSection img {
+    height: 40vh;
+}
+
+.imgNosotros {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*Area Clientes*/
+.imgClientes {
+    width: 100px;
+}
+
+
+
+/* Búsqueda de productos */
+.gridProductos {
+    display: grid;
+
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+}
+
+.gridProductos h3,
+.gridProductos p {
+    background-color: #BADA55;
+    margin-right: 10px;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.gridProductos h3 {
+    text-align: center;
+}
+
+.btnProductos {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #646363;
+    text-decoration: none;
+    text-align: center;
+    color: #646363;
+    width: 50%;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnProductos:hover {
+    background-color: #646363;
+    color: #BADA55;
+    border: 2px solid white;
+}
+
+
+/* Responsive */
+
+@media (min-width:280px) and (max-width: 728px) {
+    header a img {
+        width: 170px;
+    }
+
+    .menuIcon {
+        margin-bottom: 10px;
+    }
+
+
+    main {
+        padding-top: 75px;
+    }
+
+    /* Intro Index */
+    .ftIntro {
+        width: 100%;
+    }
+
+    main h1 {
+        width: 90%;
+        font-size: 25px;
+    }
+
+    .parrafosResponsive {
+        font-size: 5px;
+    }
+
+    /* Sección Novedades */
+    h2 {
+        font-size: 20px;
+
+    }
+
+    h4 {
+        font-size: 10px;
+    }
+
+    .sectionNovedades article video {
+        width: 50%;
+    }
+
+}
+
+@media (min-width:280px) and (max-width: 544px) {
+    .sectionAreaClientes div a {
+        text-decoration: none;
+        color: gray;
+        border: #646363;
+        border: 1px solid #646363;
+        width: 30%;
+        margin: 5px 0 10px 5px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+
+    .contactInfo iframe {
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    text-align: center;
+    margin: 0;
+    
+}
+footer div img{
+    width: 50px;
+    margin: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    margin: 0;
+
+}
