@@ -8,6 +8,8 @@
     <title>Nuestros Rubros: DisCor</title>
     <!-- BootStrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Animacion -->
+    <link rel="stylesheet" href="../css/wickedcss.min.css">
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="../estilos/estilos.css">
 
@@ -25,47 +27,49 @@
     <div class="loader">
 
     </div>
-    <header>
-        <a href="../index.html"><img src="../imagenes/logo-discor-sin-letras.png" alt="Logo DisCor"></a>
-        <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-            </svg>
-        </a>
+    <header class="header">
+        <section class="anner">
 
 
-        <nav id="myTopNav" class="topNav responsive">
-            <ul id="menuBlock">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="rubros.html">Rubros</a></li>
-                <li><a href="nuestra-empresa.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="area-clientes.html">Clientes</a></li>
-            </ul>
 
-        </nav>
-        <article>
-            <div class="social">
-                <ul>
-                    <li><a target="_blank" href="https://instagram.com/info_discor"><img id="iconoWhatsInsta"
-                                class="img-thumbnail" src="../imagenes/instagram-img.png"
-                                alt="Imagen Instagram DisCor"></a></li>
-                    <li><a class="instaIcon" target="_blank"
-                            href="https://api.whatsapp.com/send?phone=+543517638778&text=Buenas%20DisCor!%20%C2%BFC%C3%B3mo%20est%C3%A1n?%20Quer%C3%ADa%20realizar%20una%20consulta%20sobre..."><img
-                                class="img-thumbnail" id="iconoWhatsInsta" src="../imagenes/whatsapp-icon.png"
-                                alt="Whatsapp de DisCor"></a>
+
+            <label for="menu-control" class="hamburger heartbeat">
+                <i class="fa fa-bars fa-3x hamburger__icon" aria-hidden="true"></i>
+            </label>
+
+
+            <input type="checkbox" id="menu-control" class="menu-control">
+
+            <aside class="sidebar container-fluid">
+
+                <nav class="sidebar__menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="rubros.html">Rubros</a>
+                    <a href="nuestra-empresa.html">Nosotros</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="area-clientes.html">Clientes</a>
+                </nav>
+
+                <label for="menu-control" class="sidebar__close"></label>
+
+                <ul class="sidebar__social">
+                    <li>
+                        <a href="https://instagram.com/info_discor/">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
                     </li>
-                    <!-- <li><a href="http://www.discor.com.ar/CarritoCompras/Discor.msi"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-laptop" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
-                            </svg></a></li> -->
+                    <li>
+                        <a href="https">
+                            <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    
                 </ul>
-            </div>
-        </article>
+            </aside>
+
+
+        </section>
+
 
     </header>
     <main class="rubrosMain">
@@ -91,9 +95,9 @@ Máquinas manuales y eléctricas
 
 Interruptores y mucho más... -->
 
-        <h2>Tenemos distintos rubros</h2>
-        <div class="sectionRubros">
-            <section class="row justify-content-start  align-items-center">
+        <h2 class="h2Rubros">Tenemos distintos rubros</h2>
+        <div class="sectionRubros container-fluid">
+            <section class="row  justify-content-start  align-items-center">
                 <div class="col col-12 col-sm-12 col-md-6 col-lg-6 align-items-center">
                     <ul >
                         <li>Amortiguadores de Portón y Capot</li>
@@ -103,7 +107,7 @@ Interruptores y mucho más... -->
                         <li>Carcasas para llaves</li>
                         <li>Manijas Interiores, Exteriores y más</li>
                         <li>Cilindros de puerta, baúl y más...</li>
-                        <br>
+                        <br><br>
                         <a class="btnIntro" href="contacto.html">Ser Cliente</a>
                     </ul>
                     
@@ -135,6 +139,7 @@ Interruptores y mucho más... -->
     </footer>
     <script src="../scripts/script-loader.js"></script>
     <script src="../scripts/script-resposive.js"></script>
+    <script src="https://use.fontawesome.com/e54b3494a2.js"></script>
 </body>
 
 </html>
